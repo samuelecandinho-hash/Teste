@@ -1,0 +1,41 @@
+div {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid + span::after {
+  position: absolute;
+  content: "✖";
+  padding-left: 5px;
+  color: rgb(0, 0, 0);
+}
+
+input:valid + span::after {
+  position: absolute;
+  content: "✓";
+  padding-left: 5px;
+  color: #000000;
+}
+.master {
+  background-color:#819674;
+  align-items:center;
+justify-content: center;
+justify-items: center;
+margin-left: 510px;
+margin-right: 510px;
+margin-top: 50px;
+
+}
+body {
+  background-color:#404E3B;
+
+}
+
