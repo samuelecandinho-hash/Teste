@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>doação</title>
 </head>
 <body>
  
@@ -18,7 +18,7 @@
         <input type="email" id="email" placeholder="Digite seu email" required>
         <br>
          <label for="tel">Digite o seu telefone (xxxx-xxxx):</label>
-    <input id="tel" name="tel" type="tel"  minlength="8" maxlength="" required pattern="[0-9]{4}-[0-9]{4}"/>
+    <input id="tel" name="tel" type="tel"  minlength="8" maxlength="9" required pattern="[0-9]{4}-[0-9]{4}"/>
     <span class="validacao"></span>
         <br>
         <label for="CPF">CPF(xxx.xxx.xxx-xx):</label>
@@ -26,17 +26,37 @@
         <span class="validacao"></span>
         <br>
         <label for="idade">Idade:</label>
-        <input type="text" id="idade" placeholder="Digite sua idade" required>
+        <input type="number" id="idade" placeholder="Digite sua idade" required>
         <br>
         <label for="cidade">Cidade:</label>
         <input type="text" id="cidade" placeholder="Qual é sua cidade" required>
         <br>
     <label for="moradia">Moradia:</label>
     <select name="moradia" id="moradia" required>
-        <option value="">Selecione</option> </option>
+        <option value="">Selecione</option>
         <option value="casa"> Casa</option>
         <option value="apartamento">Apartamento</option>
     </select>
+   
+    <div id="campoCasa">
+    <br>
+    <label for="quintalSeguro">O quintal é seguro (muros/telas)?</label>
+    <select id="quintalSeguro">
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+   
+</div>
+  <div id="campoApto">
+    <label for="permitePet">O condomínio permite animais?</label>
+    <select id="permitePet">
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+</div>
+
     <br>
     <label for="quintal"> Possui Quintal?</label>
     <input type="radio" name="quintal" value="sim" required>sim
@@ -60,6 +80,6 @@
    </div>
 
 
-
+   <script src="script.js"></script>
 </body>
 </html>

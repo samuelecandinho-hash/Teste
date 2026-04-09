@@ -38,4 +38,9 @@ body {
   background-color:#404E3B;
 
 }
-
+#campoApto{
+  display: none;
+}
+#campoCasa {
+  display: none;
+}
